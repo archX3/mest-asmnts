@@ -68,14 +68,14 @@ dataList = []
 
 contactList = ContactManager()
 
-contactList.addContact(Contact("nana", "M", "+233 49 38920 3", "idk", "abc.efg.xyz"))
-contactList.addContact(Contact("ama", "M", "+233 49 38920 3", "idk", "abc.efg.xyz"))
-contactList.addContact(Contact("kwesi", "M", "+233 49 38920 3", "idk", "abc.efg.xyz"))
+# contactList.addContact(Contact("nana", "M", "+233 49 38920 3", "idk", "abc.efg.xyz"))
+# contactList.addContact(Contact("ama", "M", "+233 49 38920 3", "idk", "abc.efg.xyz"))
+# contactList.addContact(Contact("kwesi", "M", "+233 49 38920 3", "idk", "abc.efg.xyz"))
 
 # print(contactList.find("nana"))
-print(contactList.viewAllContacts())
+# print(contactList.viewAllContacts())
 
-print(contactList.removeContact("ahmad"))
+# print(contactList.removeContact("ahmad"))
 # newContact = ContactManager(name, gender, phoneNumber, postalAddress, email)
 
 # print(newContact.printAllData()[0], newContact.printAllData()[1], newContact.printAllData()[2], )
@@ -84,10 +84,24 @@ while True:
     print( "Type 1 to exit loop, 2 to add contact, 3 to remove contact, 4 to find contact")
     command = input("> ")
 
+    if(command == "2"):
+
         name = input("What's you name\n")
         gender = input("Are you male or Female")
         phoneNumber = input("what number do I call you on")
         postalAddress = input("can I have you postal address pls")
         email = input("one more pls, your email")
+
+        contactList.addContact(Contact(name , gender , phoneNumber , postalAddress , email))
+
+    elif (command == "3"):
+        name = input("What's you name\n")
+        print(contactList.removeContact(name))
+
+    elif (command == "4"):
+        name = input("What's you name\n")
+        print(contactList.find("nana"))
+
+
 
 
