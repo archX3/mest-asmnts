@@ -1,0 +1,4 @@
+name, gender, phoneNumber, postalAddress, email
+nana, M, +233 260 721 202, som where, idrk, abc@efg.xyz
+sadiq,M, 216506554566 565 , no 5 lagos ave,sdiq@okocha.com
+wanluv,F, 156 65155 565 4646, no 1 mango street, kubulor@mensa.4kninbois
