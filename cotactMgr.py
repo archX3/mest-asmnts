@@ -115,10 +115,7 @@ while True:
     while idx < lth :
 
         print( str(idx + 1)+ " to " + commands[idx])
-
         # print( "{} to {}". format(str(idx + 1), commands[idx]))
-
-
 
         idx += 1
 
@@ -133,7 +130,7 @@ while True:
             dataList[i] = input(">>")
             i += 1
 
-        contactList.addContact(Contact(name = dataList[0], dataList[1], dataList[2], dataList[3], dataList[4]))
+        contactList.addContact(Contact(dataList[0], dataList[1], dataList[2], dataList[3], dataList[4]))
 
     elif (command == "3"):
         print("\nWhat's you name")
